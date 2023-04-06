@@ -23,7 +23,7 @@ const CartItem = ({ item }) => {
    return (
       <div className="flex items-center justify-between px-5 my-4">
          <div className="flex gap-5">
-            <div className={`relative bg-gradient-to-b ${color} ${shadow} rounded p-3 hover:scale-105 transition-all duration-100 ease-in-out grid items-center w-44 h-auto lg:w-40`}>
+            <div className={`relative bg-gradient-to-b ${color} ${shadow} rounded p-3 hover:scale-105 transition-all duration-100 ease-in-out grid items-center w-44 h-auto lg:w-40 sm:w-32 xsm:w-24`}>
                <img src={img} alt={title} className="" />
                <div className='absolute right-1 top-1 blur-theme-effect bg-white/80 text-black text-xs px-1 rounded'>${price}</div>
             </div>

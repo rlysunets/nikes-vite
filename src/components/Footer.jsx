@@ -19,14 +19,10 @@ const Footer = ({ data: { titles, links } }) => {
                ))}
             </div>
          </div>
-         <div className='mt-5 text-center'>
-            <p className='text-sm md:text-center'>
-               Copyright
-               <sup className='text-base font-bold'>&copy;</sup>
-               All Reserved Rights
-               <span className='font-semibold mx-1'>Roman Lysunets</span>
-               {year}
-            </p>
+         <div className="mt-5 text-center text-sm sm:text-xs font-semibold">
+            <span>developed by</span>
+            <a href="https://www.linkedin.com/in/roman-lysunets-21b166225/" target="_blank" title="LinkedIn" className="underline px-1">Roman Lysunets</a>
+            <span>{year}</span>
          </div>
       </footer>
    )

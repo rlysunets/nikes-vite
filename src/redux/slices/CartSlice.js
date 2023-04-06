@@ -17,9 +17,11 @@ export const cartSlice = createSlice({
    initialState,
    reducers: {
       setOpenCart: (state) => {
+         document.body.style.overflow = "hidden"
          state.cartState = true
       },
       setCloseCart: (state) => {
+         document.body.style.overflow = "scroll"
          state.cartState = false
       },
       addItem: (state, action) => {
